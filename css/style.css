@@ -6250,9 +6250,14 @@ header h1 {
   background: #ededed;
   padding: 10px; }
 
+.media-body {
+  padding-left: 10px; }
+
+.video {
+  background: #fff; }
+
 .work-list li {
   list-style: none;
-  float: left;
   padding: 0 10px 0px 10px;
   margin-bottom: 30px; }
 
@@ -6262,5 +6267,9 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+/* Fancybox */
+.fancybox-custom .fancybox-skin {
+  box-shadow: 0 0 50px #222; }
 
 /*# sourceMappingURL=style.css.map */

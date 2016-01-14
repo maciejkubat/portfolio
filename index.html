@@ -9,17 +9,40 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+
+	<script type="text/javascript" src="js/fancy.js"></script>
+
   </head>
 
   <body>
 
     <section>
     	<div class="container container-main">
-	    	<img src="img/maciej_kubat.png" class="profile-img">
+	    	<img src="images/maciej_kubat.png" class="profile-img">
 	    	<header>
 	    		<h1> Hello, my name is <strong>Maciej Kubat</strong><br/>I lead web developing projects</h1>
 	    	</header>
-	    	<img src="img/line2.png" class="center-block line">
+	    	<img src="images/line2.png" class="center-block line">
 	    	<div class="row">
 	    		<div class="col-md-7">
 	    			<h2># About Me</h2>
@@ -28,10 +51,10 @@
 	    		<div class="col-md-5">
 	    			<h2> # Contact Info</h2>
 	    			<ul class="contact-list">
-	    				<li><img src="img/phone.png"> +351 937 037 301</li>
-	    				<li><img src="img/email.png"> maciek.kubat@gmail.com</li>
-	    				<li><img src="img/facebook.png"> Facebook <span><a href="https://facebook.com/maciek.kubat">facebook.com/maciek.kubat</a></li>
-	    				<li><img src="img/linkedin.png"> LinkedIn <span><a href="https://www.linkedin.com/in/maciek-kubat-7796b979">linkedin.com/in/maciek-kubat-7796b979</a></span></li>
+	    				<li><img src="images/phone.png"> +351 937 037 301</li>
+	    				<li><img src="images/email.png"> maciek.kubat@gmail.com</li>
+	    				<li><img src="images/facebook.png"> Facebook <span><a href="https://facebook.com/maciek.kubat">facebook.com/maciek.kubat</a></li>
+	    				<li><img src="images/linkedin.png"> LinkedIn <span><a href="https://www.linkedin.com/in/maciek-kubat-7796b979">linkedin.com/in/maciek-kubat-7796b979</a></span></li>
 	    			</ul>
 	    		</div>
 	    	</div>
@@ -40,8 +63,7 @@
 	    			<h2># Experience</h2>
 					<div class="media">
 					  <div class="media-left">
-					  	2015-Now 
-					    </a>
+					  	2015-Now  
 					  </div>
 					  <div class="media-body">
 					    <h4 class="media-heading">Deployed.pl</h4>
@@ -51,7 +73,6 @@
 					<div class="media">
 					  <div class="media-left">
 					  	2011-2015 
-					    </a>
 					  </div>
 					  <div class="media-body">
 					    <h4 class="media-heading">Axence</h4>
@@ -61,7 +82,6 @@
 					<div class="media">
 					  <div class="media-left">
 					  	2009-2012 
-					    </a>
 					  </div>
 					  <div class="media-body">
 					    <h4 class="media-heading">Radiofonia.fm</h4>
@@ -71,7 +91,6 @@
 					<div class="media">
 					  <div class="media-left">
 					  	2002-2006 
-					    </a>
 					  </div>
 					  <div class="media-body">
 					    <h4 class="media-heading">Sygnity</h4>
@@ -111,31 +130,60 @@
 
 	    	<div class="row">
 	    		<div class="col-md-7">
+	    			<h2># Video Projects</h2>
+	    			<div class="media video">
+					  <div class="media-left">
+					  	<a class="fancybox-media" href="https://www.youtube.com/watch?v=d9H3EJGcULE"><img height="100" src="images/muzyk.jpg" class="img-circle"></a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">"Local artist" (Beat brzeziny) - Mockumentary</h4>
+					    <p>Director / Video Producer </p>
+					  </div>
+					</div>
+					<div class="media video">
+					  <div class="media-left">
+					  	<a class="fancybox-media" href="https://www.youtube.com/watch?v=TlN2gF2R5SU"><img height="100" src="images/nvision.jpg" class="img-circle"></a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">"Axence nVision - Marketing Video"</h4>
+					    <p>Director & Designer / Text Author / Video Producer / Audio recording coordinator / Animation / Audio Post-Production</p>
+					  </div>
+					</div>
+					<div class="media video">
+					  <div class="media-left">
+					  	<a class="fancybox-media" href="https://www.youtube.com/watch?v=VKIEEwH9N1U"><img height="100" src="images/estimote.jpg" class="img-circle"></a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">"Estimote beacons - unboxing video"</h4>
+					    <p>Director / Video Producer - Project made for job aplication</p>
+					  </div>
+					</div>
+					<div class="media video">
+					  <div class="media-left">
+					  	<a class="fancybox-media" href="https://www.youtube.com/watch?v=xS6PuVObsEg"><img height="100" src="images/przelew.jpg" class="img-circle"></a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">"Przelew" (The Wire)</h4>
+					    <p>Co operation - Stage Design / Fire FX</p>
+					  </div>
+					</div>
+	    		</div>
+	    		<div class="col-md-4">
+	    			<h2># Recent Web Projects</h2>
+	    				<ul class="work-list">
+	    					<li><a href="http://www.fambooks.net"><img class="center-block" src="images/work1.png"></a></li>
+	    					<li><a href="http://www.style-your-castle.com"><img class="center-block" src="images/work2.png"></a></li>
+	    					<li><a href="http://www.nowesubstancje.pl"><img class="center-block" src="images/work3.png"></a></li>
+	    					<li><a href="http://www.weaverpopcorn.pl"><img class="center-block" src="images/work4.png"></a></li>
+	    				</ul>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col-md-7">
 	    			<h2># Hobbies</h2>
 	    				<div class="alert alert-success" role="alert"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i> Board & Video Games</div>
 	    				<div class="alert alert-info" role="alert"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i> Vj-ing</div>
 	    				<div class="alert alert-warning" role="alert"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i> Snow & Skim Boarding</div>
-	    		</div>
-	    		<div class="col-md-5">
-	    			<h2># Recent Projects</h2>
-	    				<ul class="work-list">
-	    					<li><a href="http://www.fambooks.net"><img src="img/work1.png"></a></li>
-	    					<li><a href="http://www.style-your-castle.com"><img src="img/work2.png"></a></li>
-	    					<li><a href="http://www.nowesubstancje.pl"><img src="img/work3.png"></a></li>
-	    					<li><a href="http://www.weaverpopcorn.pl"><img src="img/work4.png"></a></li>
-	    				</ul>
-	    		</div>
-	    	</div>
-
-	    	<div class="row">
-	    		<div class="col-md-7">
-	    			<h2># Video Projects</h2>
-	    				<a data-toggle="modal" data-target=".bs-modal-1"><img height="120" src="img/muzyk.jpg" class="img-circle"></a>
-	    				<a data-toggle="modal" data-target=".bs-modal-2"><img height="120" src="img/nvision.jpg" class="img-circle"></a>
-	    				<a data-toggle="modal" data-target=".bs-modal-3"><img height="120" src="img/przelew.jpg" class="img-circle"></a>
-	    				<a data-toggle="modal" data-target=".bs-modal-4"><img height="120" src="img/estimote.jpg" class="img-circle"></a>
-	    		</div>
-	    		<div class="col-md-5">
 	    		</div>
 	    	</div>
 
@@ -151,7 +199,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
